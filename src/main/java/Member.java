@@ -52,5 +52,9 @@ public class Member extends Pengguna {
     public String getNama() {
         throw new UnsupportedOperationException("Not supported yet."); 
     }
+    
+    public void test() {
+        
+    }
 }
 
