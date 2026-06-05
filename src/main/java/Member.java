@@ -72,7 +72,7 @@ public class Member extends Pengguna {
 
     @Override
     public String getNama() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+        return super.getNama();
     }
     
     public void test() {
