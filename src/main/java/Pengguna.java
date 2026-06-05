@@ -1,6 +1,6 @@
 public abstract class Pengguna {
     private int id;
-    private String nama;
+    String nama;
     private String email;
     private String noTelp;
 

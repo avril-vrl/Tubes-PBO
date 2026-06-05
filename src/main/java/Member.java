@@ -72,7 +72,7 @@ public class Member extends Pengguna {
 
     @Override
     public String getNama() {
-        return super.getNama();
+        return nama;
     }
     
     public void test() {
