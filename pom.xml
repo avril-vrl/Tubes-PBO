@@ -10,4 +10,5 @@
         <maven.compiler.release>25</maven.compiler.release>
         <exec.mainClass>com.mycompany.tubespbo.Tubespbo</exec.mainClass>
     </properties>
+    <name>tubes_pbo</name>
 </project>
