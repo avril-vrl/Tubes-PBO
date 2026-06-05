@@ -16,16 +16,38 @@ public class Member extends Pengguna {
     }
 
     // Getter
-    public int getNomorMember() { return nomorMember; }
-    public Date getTanggalDaftar() { return tanggalDaftar; }
-    public String getStatusAktif() { return statusAktif; }
-    public Membership getMembership() { return membership; }
+    public int getNomorMember() {
+        return nomorMember; 
+    }
+    
+    public Date getTanggalDaftar() {
+        return tanggalDaftar; 
+    }
+    
+    public String getStatusAktif() {
+        return statusAktif; 
+    }
+    
+    public Membership getMembership() {
+        return membership; 
+    }
 
     // Setter
-    public void setNomorMember(int nomorMember) { this.nomorMember = nomorMember; }
-    public void setTanggalDaftar(Date tanggalDaftar) { this.tanggalDaftar = tanggalDaftar; }
-    public void setStatusAktif(String statusAktif) { this.statusAktif = statusAktif; }
-    public void setMembership(Membership membership) { this.membership = membership; }
+    public void setNomorMember(int nomorMember) {
+        this.nomorMember = nomorMember;
+    }
+    
+    public void setTanggalDaftar(Date tanggalDaftar) { 
+        this.tanggalDaftar = tanggalDaftar; 
+    }
+    
+    public void setStatusAktif(String statusAktif) { 
+        this.statusAktif = statusAktif; 
+    }
+    
+    public void setMembership(Membership membership) { 
+        this.membership = membership; 
+    }
 
     public String getNomorMemberStr() {
         return "Member" + String.format("%04d", nomorMember);
@@ -36,16 +58,16 @@ public class Member extends Pengguna {
     }
 
     public String daftarKelas() {
-        return "Member " + getNama() + " berhasil didaftarkan ke kelas.";
+        return "Member " + getNama() + " berhasil didaftarkan ke kelas";
     }
 
     @Override
     public String getInfo() {
-        return "[MEMBER] No: " + getNomorMemberStr()
-                + " | Nama: " + getNama()
-                + " | Email: " + getEmail()
-                + " | Telp: " + getNoTelp()
-                + " | Status: " + statusAktif;
+        return "Nomor Member " + getNomorMemberStr()
+                + "\nNama: " + getNama()
+                + "\nEmail: " + getEmail()
+                + "\nNo HP: " + getNoTelp()
+                + "\nStatus: " + statusAktif;
     }
 
     @Override
